@@ -6,20 +6,21 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Blogpage from "./components/Blogpage";
 import ServicePage from "./components/ServicePage";
 import Footer from "./components/Footer";
+import Shiksha from "./components/Shiksha";
 
 function App() {
   return (
     <div className="bg-[#282019]">
       <BrowserRouter>
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
-          <Route path="/" exact element={<Layout />} />
+          <Route path="/" exact element={<Shiksha />} />
           <Route path="/blogpage/:id" element={<Blogpage />} />
           <Route path="/product/:id" element={<ProductDetails />} />
-
+          <Route path="/shiksha" element={<Shiksha />}/>
           <Route path="/servicePage/:id" element={<ServicePage />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );

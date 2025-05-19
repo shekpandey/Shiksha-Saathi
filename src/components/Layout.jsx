@@ -13,6 +13,7 @@ import Review from "./Review";
 import Feedbackform from "./Feedbackform";
 import Contact from "./Contact";
 import BussinessHours from "./BussinessHours";
+import Shiksha from "./Shiksha";
 const Layout = () => {
   return (
     <div className="bg-[#282019]">
@@ -25,6 +26,7 @@ const Layout = () => {
       <Galleary />
       <Offer />
       <BussinessHours/>
+      <Shiksha/>
       {/* <Certificates />
       <Feedbackform />
       <Review />
